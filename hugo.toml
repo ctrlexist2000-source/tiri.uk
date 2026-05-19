@@ -1,24 +1,18 @@
 baseURL = "https://www.tiri.uk/"
 languageCode = "pl"
 title = "Tiri.Uk"
-theme = "PaperMod"
+theme = "tiri-elegant"
 paginate = 10
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
+summaryLength = 40
 
 [params]
   author = "Tiri"
   description = "Personal blog by Tiri"
   ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
-  TocOpen = false
-  comments = false
 
 [outputs]
   home = ["HTML", "RSS"]

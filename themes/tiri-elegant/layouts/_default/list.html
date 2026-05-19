@@ -1,0 +1,73 @@
+{{ define "main" }}
+<div class="container">
+
+  {{ if .IsHome }}
+  {{/* ─── HOMEPAGE ─── */}}
+  <section class="page-home">
+
+    <div class="home-intro reveal">
+      <p class="home-intro-eyebrow">Personal Journal — est. 2020</p>
+      <h1 class="home-intro-title">Thoughts, stories<br/>& <em>everything in between.</em></h1>
+      <p class="home-intro-sub">A personal space for long-form writing, cultural reflections, and the quiet observations that shape everyday life.</p>
+    </div>
+
+    <div class="section-header reveal">
+      <span class="section-number">—</span>
+      <h2 class="section-title">Recent entries</h2>
+    </div>
+
+    <ul class="post-list">
+      {{ range .Paginator.Pages }}
+      <li class="post-item reveal">
+        <a href="{{ .Permalink }}" class="post-link">
+          <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "02 Jan 2006" }}
+          </time>
+          <div class="post-info">
+            <h3 class="post-title">{{ .Title }}</h3>
+            {{ with .Summary }}
+            <p class="post-excerpt">{{ . | plainify | truncate 160 }}</p>
+            {{ end }}
+            <p class="post-reading-time">{{ .ReadingTime }} min read</p>
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{/* Pagination */}}
+    {{ template "_internal/pagination.html" . }}
+
+  </section>
+
+  {{ else }}
+  {{/* ─── SECTION LIST (e.g. /posts/) ─── */}}
+  <section class="page-archives">
+    <div class="content-narrow">
+
+      <div class="section-header reveal">
+        <span class="section-number">—</span>
+        <h2 class="section-title">{{ .Title }}</h2>
+      </div>
+
+      <ul class="post-list">
+        {{ range .Pages }}
+        <li class="post-item reveal">
+          <a href="{{ .Permalink }}" class="post-link">
+            <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "02 Jan 2006" }}
+            </time>
+            <div class="post-info">
+              <h3 class="post-title">{{ .Title }}</h3>
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}

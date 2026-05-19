@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with .Site.Params.ogImage }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+
+  <!-- RSS -->
+  {{ range .AlternativeOutputFormats }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end }}
+</head>
+<body>
+  <div class="site-wrapper">
+
+    {{/* ─── NAVIGATION ─── */}}
+    <nav class="site-nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="{{ "/" | relURL }}" class="nav-logo">TIRI</a>
+          <ul class="nav-links">
+            {{ range .Site.Menus.main }}
+              <li>
+                <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {{/* ─── HERO BANNER (homepage only) ─── */}}
+    {{ if .IsHome }}
+    <div class="hero-banner">
+      <img src="{{ "images/banner.png" | relURL }}" alt="{{ .Site.Title }} — Banner" />
+    </div>
+    {{ end }}
+
+    {{/* ─── MAIN CONTENT ─── */}}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{/* ─── FOOTER ─── */}}
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <span class="footer-logo">TIRI</span>
+          <span class="footer-copy">© {{ now.Year }} {{ .Site.Title }}</span>
+          <div class="footer-links">
+            <a href="{{ "/index.xml" | relURL }}">RSS</a>
+            {{ with .Site.Params.instagram }}<a href="{{ . }}" target="_blank" rel="noopener">IG</a>{{ end }}
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  {{/* ─── SCROLL REVEAL ─── */}}
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      if (!reveals.length) return;
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => io.observe(el));
+    });
+  </script>
+</body>
+</html>

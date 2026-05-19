@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+{{/* ─── ARTICLE HEADER ─── */}}
+<header class="single-header">
+  <div class="container">
+    <div class="content-narrow">
+      <div class="single-meta reveal">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time>
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      <h1 class="single-title reveal reveal-delay-1">{{ .Title }}</h1>
+    </div>
+  </div>
+</header>
+
+<div class="single-divider"></div>
+
+{{/* ─── ARTICLE CONTENT ─── */}}
+<article class="container">
+  <div class="content-narrow post-content reveal reveal-delay-2">
+    {{ .Content }}
+  </div>
+</article>
+
+{{/* ─── POST NAVIGATION ─── */}}
+<div class="container">
+  <div class="content-narrow">
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="post-nav-item post-nav-prev">
+        <span class="post-nav-label">← Previous</span>
+        <span class="post-nav-title">{{ .Title | truncate 60 }}</span>
+      </a>
+      {{ else }}
+      <div></div>
+      {{ end }}
+
+      {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="post-nav-item post-nav-next">
+        <span class="post-nav-label">Next →</span>
+        <span class="post-nav-title">{{ .Title | truncate 60 }}</span>
+      </a>
+      {{ else }}
+      <div></div>
+      {{ end }}
+    </nav>
+  </div>
+</div>
+
+{{ end }}

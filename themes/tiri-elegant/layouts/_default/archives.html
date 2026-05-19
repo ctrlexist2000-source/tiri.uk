@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container">
+  <section class="page-archives">
+    <div class="content-narrow">
+
+      <div class="section-header reveal">
+        <span class="section-number">—</span>
+        <h2 class="section-title">Archives</h2>
+      </div>
+
+      {{ $pages := where .Site.RegularPages "Section" "posts" }}
+      {{ range $pages.GroupByDate "2006" }}
+      <div class="archive-year reveal">
+        <h3 class="archive-year-title">{{ .Key }}</h3>
+        <ul class="archive-list">
+          {{ range .Pages }}
+          <li class="archive-item">
+            <span class="archive-item-date">{{ .Date.Format "02 Jan" }}</span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+    </div>
+  </section>
+</div>
+{{ end }}
