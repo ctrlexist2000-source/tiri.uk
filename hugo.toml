@@ -1,0 +1,43 @@
+baseURL = "https://tiri.uk/"
+languageCode = "en-us"
+title = "Tiri's Blog"
+theme = "PaperMod"
+paginate = 10
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[params]
+  author = "Tiri"
+  description = "Personal blog by Tiri"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30

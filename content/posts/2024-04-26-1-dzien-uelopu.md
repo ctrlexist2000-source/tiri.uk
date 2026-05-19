@@ -1,0 +1,125 @@
+---
+title: "1 tydzień urlopu "
+date: 2024-04-26T12:16:00
+draft: false
+tags:
+  - "polska"
+  - "Dziennik"
+  - "przemyślenia"
+---
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLpcOhk2tJ-jWwtIv_yWPOYhkabwbj-qYZ1qNmRfUhxcHWiZkwS9JNusA9F0w6or_s9J-DHsmiqflaaDOauxzJs97NtknObg4GR2cb50nVIbfaOTLWcmgMo6NqRrR0VfYZ9xJmb5xj0qaTarwlOP7jRFwIeXgiCQ9Yv_hz46x-_yWnDV_oWxbVmQFHmp0S/w640-h236/Projekt%20bez%20nazwy%20(3).png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLpcOhk2tJ-jWwtIv_yWPOYhkabwbj-qYZ1qNmRfUhxcHWiZkwS9JNusA9F0w6or_s9J-DHsmiqflaaDOauxzJs97NtknObg4GR2cb50nVIbfaOTLWcmgMo6NqRrR0VfYZ9xJmb5xj0qaTarwlOP7jRFwIeXgiCQ9Yv_hz46x-_yWnDV_oWxbVmQFHmp0S/s851/Projekt%20bez%20nazwy%20(3).png)
+
+ Omlette du fromage świecie !
+
+1 dzień wakacji -piątek
+
+Mój dzień dzisiaj zaczął się punkt 2 w nocy. Wczoraj byłam w pracy od 8.30 am do 8 pm . Zaliczyłam 3 dwugodzinne meetingi . Po pracy więc, resztką dokończyłam pakowanie i się położyłam . 4h snu i wio na lotnisko. Zaczęło się trochę pechowo bo umknął nam zjazd na stanstead i musieliśmy nadrobić 30min drogi.  W każdym razie udało się dojechać na czas. Szacunowy mnie wysadził i ruszył w drogę powrotną. Odprawa przeszła bez jakiś większych ceregieli . W samolocie przypadł mi w udziale cały rząd siedzeń dla mnie i to zaraz na samym początku samolotu także luksus. Usiadłam przy oknie. Porobiłam fajne zdjęcia Wisły bo tym razem lądowanie w Wwie. W Modlinie znów podpadłam celnikom bo wzięli mnie na rutynowe prześwietlanie bagażu, ale no niech im będzie. Na kimś muszą ćwiczyć.
+
+Teraz Siedzę tu sobie od 9.40am bo flixbus przycina na całego. Mieli być 12.25 a teraz ma być 3.05 pm i mam nadzieje - że to ostatnie słowo bo stracę piąteczek sącząc trzecią kawę na lotnisku. Nie ukrywam - bym sobie już troszkę pospała . Mógłby już ten busior przyjechać. Jeszcze pan Łukasz z Flexibusa mnie wkurzył bo mi zaczął ściemniać , że naprawią busa i podjedzie a ewidentnie widzę że poszli na łatwiznę i karzą nam po prostu czekać na następny
+
+ I tak o. Taka to z nimi zabawa.
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkPOtgwelr6nBYvuPWBEDKJ8NiuuaSZ0IJ5CWyuI8UyAKhrLk9mE01BztLLphnrrhyphenhyphenYijSP1G338ouLZq7XXFjdSPqOokK82xsz_uEzM3EbWwxZ6QLXzoKDOGXMzF49bjMM14hUv1xkWMZRfkgyIao6bXHi9CvoGi9p7l5rC9HJdBUgr7Nuyf1tNFdv8lR/s320/20240426_083403.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkPOtgwelr6nBYvuPWBEDKJ8NiuuaSZ0IJ5CWyuI8UyAKhrLk9mE01BztLLphnrrhyphenhyphenYijSP1G338ouLZq7XXFjdSPqOokK82xsz_uEzM3EbWwxZ6QLXzoKDOGXMzF49bjMM14hUv1xkWMZRfkgyIao6bXHi9CvoGi9p7l5rC9HJdBUgr7Nuyf1tNFdv8lR/s4000/20240426_083403.jpg)
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPJPXcrPfKBPOtCJZILJv9XE80sN1nUKFKVyzu7POv_RtzBolDv4GycTooBpzVppC_Ar0IHD4tb6Z7r6WnhZ-YHiFSlCPhTQbquhyphenhyphenW3FvAp08ktcXS7Y2NgNBSOWVdKfBfTakAuugTyd4Myl6mYt0U3dgq-NveRy7jS_rNuR7Jj-Xx2v3gsFaAQ2UZL5vM/s320/20240426_083006.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPJPXcrPfKBPOtCJZILJv9XE80sN1nUKFKVyzu7POv_RtzBolDv4GycTooBpzVppC_Ar0IHD4tb6Z7r6WnhZ-YHiFSlCPhTQbquhyphenhyphenW3FvAp08ktcXS7Y2NgNBSOWVdKfBfTakAuugTyd4Myl6mYt0U3dgq-NveRy7jS_rNuR7Jj-Xx2v3gsFaAQ2UZL5vM/s4000/20240426_083006.jpg)
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdWe-qIY52WzLJJYQ4R5eyogOiiinRqFamqdsxcZ6lwCry0wkD-8aZlOe3M00u_uj92M7X4dx7jNXOWZd29orOov-DeDI7cWr3vPnznKSeIp7gMHiuSym4N3-ZGFX3eC9-Pjn4-UhN2bdX4s_hUDqe2RBkkYVFEKKkCl66nX0V1HJW6WWv2Tfvt4JGNfci/s320/20240426_095948.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdWe-qIY52WzLJJYQ4R5eyogOiiinRqFamqdsxcZ6lwCry0wkD-8aZlOe3M00u_uj92M7X4dx7jNXOWZd29orOov-DeDI7cWr3vPnznKSeIp7gMHiuSym4N3-ZGFX3eC9-Pjn4-UhN2bdX4s_hUDqe2RBkkYVFEKKkCl66nX0V1HJW6WWv2Tfvt4JGNfci/s4000/20240426_095948.jpg)
+
+2 dzień wakacji-sobota
+
+Odłożyłam walizkę u siory i wio do miasta.
+
+Dużo znajomych twarzy dawno niewidzianych . Milusio. Jakoś o 2 byłam w domu a to oznacza ,że byłam 24h na nogach. Były "ptaki i okna" I wygibasy na murku. Także wieczór uznaje za udany !
+
+Zjadłam zupkę i padłam jak beta. Dziś obudziłam się o 9 am bolcik i do rodziców. Czad w Bydgoszczy z tymi aplikacjami  . Jest nawet bolt pets. Zamówiłam bolta z 40% zniżką. Był w 3 minuty a żeby było zabawniej to normalna taksówka komfortu. Mogą teraz jeździć dodatkowo z appkami. Co prawda korporacja kasuje ich za to 100zł miesięcznie ale o.
+
+Braciszek przywiózł mi monetę ze stitchem z Disneylandu! 🤗🤗🤗 To będzie moja moneta szczęściowo-decyzyjna . Postanowione . Także Meiti czy reszka ?
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTtnUrw-Mmu8T2uLVgOvMP8Y5pnzkZstFI0qj07K1A_PNp6VMefdnrJVz6f_DSHBHUEeiSFxhuQ43JA0LNo7XZsbnGZkDLSOwCRfbTpOZrTbNY3kSlnr7FYFX4fWij3Juqv0SxBakTehGyjF_teCGG3Pgmtl_qqOncm4WszNMlDBMsuz-sMslUV_09tzsC/s320/20240427_115911.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTtnUrw-Mmu8T2uLVgOvMP8Y5pnzkZstFI0qj07K1A_PNp6VMefdnrJVz6f_DSHBHUEeiSFxhuQ43JA0LNo7XZsbnGZkDLSOwCRfbTpOZrTbNY3kSlnr7FYFX4fWij3Juqv0SxBakTehGyjF_teCGG3Pgmtl_qqOncm4WszNMlDBMsuz-sMslUV_09tzsC/s4000/20240427_115911.jpg)
+
+  
+
+Nocne romanse ze Scrabble nie poszły w las
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ww6OoQDp7VACr-afhdQaeVEONJXMmc1F_H8-yCVfl2o7iNpLUtYrZPvSXlYVH1tIQoa65Tga191nJzDBiSXjsijknPDF7d_c6LFz4RysfYFYq_CixV89TAhAGi1zyEf835FldiYEayf8Sdqksev_AIShIa1lRtI7uywwDU-Gx0h3wuk93p-TwDiFZhJ-/s320/20240427_140617.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ww6OoQDp7VACr-afhdQaeVEONJXMmc1F_H8-yCVfl2o7iNpLUtYrZPvSXlYVH1tIQoa65Tga191nJzDBiSXjsijknPDF7d_c6LFz4RysfYFYq_CixV89TAhAGi1zyEf835FldiYEayf8Sdqksev_AIShIa1lRtI7uywwDU-Gx0h3wuk93p-TwDiFZhJ-/s4000/20240427_140617.jpg)
+
+  
+
+3 dzień wakacji -niedziela
+
+Napisałam super posta ale się nie zapisał gdy trzęsło w pks no i tak o.
+
+W sobotę miałam spotkanie z Arkiem i Borysem w Merlinie a potem śmigałam na long night do Asi i Craiga. Całkiem fajna domówka nam wyszła.W zasadzie pół nocy przegadałam z Aryanem i Anią. Fajnie ludzie są fajni. Z imprezy skoczyłam do rodziców na grilla i chapnęłam karkóweczkę. Pierwszy raz w życiu spróbowałam kaszanki ale to nie moja bajka
+
+Fujka. Tulałam Balbine i męczyłam z Mamą agentkę o stu twarzch. Jej najświeższe odkrycie. Leniuszyłam cały dzień.
+
+Nie ma to tamto. Czasami człowiek musi
+
+Inaczej się udusi.
+
+4 dzień wakacji-poniedziałek
+
+Nie śpieszyłam się z wstawaniem nic a nic
+
+Na 13.30 poszłam do fryzjera zrobić coś z włosami
+
+Upał męczył pomyślałam więc że odwiedzę Macieja bo siadło by zimne piwko i tak o. Zasiedziałam się. Lekko już podchmielona chciałam iść do domu ale zwabiło mnie Chupitos i Karaoke. Słyszałam Shallow z płyty starego rynku i myślę sobię przeznaczenie . Naaajaaak. Noc była długa , głośna i pełna Tequili. Poznałam sympatycznych ludzi z oldschooloqym aparatem i zaprosili mnie na majówkę . Jednak musiałam odmówić -Geri wzywa. Wiadomo.
+
+5 ,6 i 7 dzień wakacji
+
+Wstałam skoro świt , spakowałam Jamniczka i ruszyłam na spacer do miasta. Tup tup. Upał.
+
+PkS do Nakła miałam dopiero o 11.45 więc postanowiłam pozałatwiać sprawy urzędowe -nowy dowód i paszport. Wszystko poszło bardzo sprawnie.
+
+W PKS poznałam pana Jacka -gadatliwego kierowcę Lini Bydgoszcz Nakło. Człowiek powinien być stand uperem. Lubię ludzi i lubi gadać. Niepospałam. Nie dał mi.
+
+Potem przesiadka zakupy w Lidlu i Wio.
+
+W stajni wszystko mam . Kremy , spraye,  ciuchy na wiosnę , zimę a nawet opiekacz do tościków.
+
+Wiosną gdy człowiek nie marznie tam jest naprawdę extra. Co prawda we wtorek komary opindlowały mnie prawie żywcem ale przeżyłam. Praca w stajni standard. Sprowadzanie koni ,pojenie czyszczenie zamiatanie. Ciało dostaje w tyłek za to umysł odpoczywa jak nigdzie.
+
+Jeździłam na Gerim , pierwszy raz mi się spłoszył . Jest moc. Jak się człowiek zagapi to mu koń spod pupy wyjedzie normalnie😝 Cudowne zwierzę i dobra robota Danusi. Byłyśmy też na dłuższym spacerze w lesie z Gerim na lonży . Czuję się przy nim coraz pewniej a i w pracy w stajni czuję się coraz bardziej samodzielna. Szkółki jeździeckie to jedno a stajnia prywatna i bycie właścicielem to całkiem co innego. Nawet inaczej się jeździ.
+
+W środę zrobiłyśmy sobie ognisko z kiełbaskami i piwkiem. I siedziałyśmy gadając o życiu i śmierci do 1.30 am. Zaspałam na karmienie dwa razy. No bo jak. Brawo ja.
+
+7 dni Danusia śmigała do Koleżanki do Bydgoszczy więc mnie zabrała. Skoczyłam do rodziców. Musiałam się wymoczyć bo włosy od kurzu stały mi już na sztywno.
+
+8 dnia Koncert na ogródku Cold Shotu Wąsik i Miraski. Więcej grzechów nie pamiętam. W pubach nic się nie działo a tempo wódeczki spowodowało ,że o 2 am skoczyłam po frytki i zawinęłam do domu na piechotę wsuwając zbawienny tłuszczyk po drodze. Gdy dotarłam do siory zdjełam buciory i padłam jak betka. Rano tylko przeglądałam telefon to jeszcze.sobie zostawiłam figla w postaci zdjęcia z frytkami.
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMdE68flqCa1SVZmhCS2DgDhfdHqkbpgQwOUZkSWoUY7LiBnFrF0OtfKt6ENRFS-DQfRA-mU0zI1COhs1Oa3AcT9BDkl03XxcGLnGIPqOK5vWWAUdBjf20f86Zz2JQuijhD-k8FTO3mnkQcCEIeEMkEoOawU5ETV315XLIximgYUqYAZB7pvpieKHs6jv9/s320/1715003259900.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMdE68flqCa1SVZmhCS2DgDhfdHqkbpgQwOUZkSWoUY7LiBnFrF0OtfKt6ENRFS-DQfRA-mU0zI1COhs1Oa3AcT9BDkl03XxcGLnGIPqOK5vWWAUdBjf20f86Zz2JQuijhD-k8FTO3mnkQcCEIeEMkEoOawU5ETV315XLIximgYUqYAZB7pvpieKHs6jv9/s2748/1715003259900.png)
+
+9 dnia -Sobota
+
+Nie miałam planów natomiast miałam kacyka. Długo leniuchowałam męcząc się w upale. Gdy się zebralam skoczyłam do żaby po wodę i zupkę
+
+Zjadłam sobie insta ramen i ruszyłam na spacer gdy słońce trochę straciło na mocy. Wylądowałam na ogródku . Trochę pograłam w karty , trochę porozmawiałam o pierdołach i skoczyłam do Merlina. Tam już nie działo się  zupełnie nic. Wszyscy chyba wybyli nad wodę. Zgarnęła mnie Asia z Craigiem. Poszliśmy do mózgu ale , że tam też niewiele się działo, skoczyliśmy do Craiga. I tak o. Od Craiga do siory zmienić buty i spakować torbę do stajni i wio na spacerek.
+
+Wyspa młynśka , chrupiąca bułeczka z jogurtem pitnym truskawkowym na śniadanko i znów wio do Niemcza naładować akumulatory przed stajnią. Zakwasy nadal trzymają i plecy troszku bolą. Muszę się trochę nareperować. Wanna rozciąganie i Maminu obiad
+
+Tego mi trzeba.  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUmSkvHf3fx3LTO9WiZbsbFcB-6eLblIsufaLY41vQQMGD12B48kIUEJPrpJ61jLdCMxseQEb-PE8XHCvPSuOoNZ5kXIc9ty43WFakKUkaeIBndoTWAWFRWUvI0rqnbAReljdZKW_G0eMKSZYefyfhmQfCJGTcj425GhTT4K2RObhHAnoZeLj0yxY-heTG/s320/1714735177098.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUmSkvHf3fx3LTO9WiZbsbFcB-6eLblIsufaLY41vQQMGD12B48kIUEJPrpJ61jLdCMxseQEb-PE8XHCvPSuOoNZ5kXIc9ty43WFakKUkaeIBndoTWAWFRWUvI0rqnbAReljdZKW_G0eMKSZYefyfhmQfCJGTcj425GhTT4K2RObhHAnoZeLj0yxY-heTG/s2748/1714735177098.png)
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEvZE4V0FJp8jKooVsMGnIQnhAulmeUS22NhOtWj7uqKFv_1ejNX9v9y1aBNJj2NtBXVsZhKHPbuN55bwe5ULuIm7paiqTEbhmgMF-C_1CtkFjCovqA-MryhrwD_2J7-5-R9yI0zSz4WriUlZ_hNDgJCzP0Bfoea0UCuELNqXZEOlfoAZKUQ2c9Ikrmd6i/w480-h640/20240505_105241.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEvZE4V0FJp8jKooVsMGnIQnhAulmeUS22NhOtWj7uqKFv_1ejNX9v9y1aBNJj2NtBXVsZhKHPbuN55bwe5ULuIm7paiqTEbhmgMF-C_1CtkFjCovqA-MryhrwD_2J7-5-R9yI0zSz4WriUlZ_hNDgJCzP0Bfoea0UCuELNqXZEOlfoAZKUQ2c9Ikrmd6i/s4000/20240505_105241.jpg)
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0M2egSmiXtsF3vbcEvLWonpgCaxQSmXvwDJDZkOMtoYcvqnE6IJhWnbwdNZoNDJ6VyCsKlmqJq7bbh8Ui07KGFc5I95y-ZoVnjAZHJXkMNJ4zWXzLglmWa6wHu0gZZbhJnTQpIUGHsSLqD5okgN4hKCvAvZKj-QG-VhajsL3vIvQg0WBn6h8Lpt5OJB98/w640-h198/20240505_103458.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0M2egSmiXtsF3vbcEvLWonpgCaxQSmXvwDJDZkOMtoYcvqnE6IJhWnbwdNZoNDJ6VyCsKlmqJq7bbh8Ui07KGFc5I95y-ZoVnjAZHJXkMNJ4zWXzLglmWa6wHu0gZZbhJnTQpIUGHsSLqD5okgN4hKCvAvZKj-QG-VhajsL3vIvQg0WBn6h8Lpt5OJB98/s11024/20240505_103458.jpg)
+
+  
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUT_YvF74ssfQXIdLyYGmWhKRte2GZrx01i6Uj-QeriVjOLzyJG4gnYWGBmvgzoU30JX4ql4B6KVqZl2D3MIYvFiDrtmqxPR11HOiLhknjzTHSzADnJg9U2dK3pAVDc4mM2e1RhQ-SJ1Dp-t60kEA3UBLXrNTtlyhgHp8q-F11j6cu-y3TXvmOCFD8x1YQ/w480-h640/20240505_103019.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUT_YvF74ssfQXIdLyYGmWhKRte2GZrx01i6Uj-QeriVjOLzyJG4gnYWGBmvgzoU30JX4ql4B6KVqZl2D3MIYvFiDrtmqxPR11HOiLhknjzTHSzADnJg9U2dK3pAVDc4mM2e1RhQ-SJ1Dp-t60kEA3UBLXrNTtlyhgHp8q-F11j6cu-y3TXvmOCFD8x1YQ/s4000/20240505_103019.jpg)
+
+  
+  
+  

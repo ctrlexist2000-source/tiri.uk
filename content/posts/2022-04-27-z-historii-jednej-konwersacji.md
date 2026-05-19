@@ -1,0 +1,44 @@
+---
+title: "W dysonansie do Posta z 29 urodzin"
+date: 2022-04-27T06:37:00
+draft: false
+tags:
+  - "Dziennik"
+  - "przemyślenia"
+---
+
+Mogę śmiało przyznać, że większość moich interakcji towarzyskich, ma miejsce przy pomocy urządzeń elektrycznych z silnym naciskiem na słowo "klepane". Krótko mówiąc kontakty utrzymuje- pisząc. Nie lubię rozmawiać przez telefon, stresuje mnie to od dziecka. Video rozmowy? Te nie zdołały mnie przekonać do siebie nawet w czasach pandemii i złotego wieku Zoomów. Nie znaczy to oczywiście, że jak trzeba-  nie odbiorę telefonu. Mus to mus.
+
+Większość czasu rozmawiam jednak palcami. Służbowo też wolę maile.
+
+Zwyczajnie zawsze warto mieć podkładkę, do której można wrócić gdy pamięć, czy też drugi człowiek- zawiedzie. Zwłaszcza w drugim języku.
+
+Codziennie słucham Audioobooków bądź podcastów. Cisza to lawa. Nie lubię. Na szczęście w epoce storytel i spotify - nie muszę się jej obawiać. Przynajmniej do póki pamiętam by naładować power bank i słuchawki ;) Sprzątanie, gotowanie, ćwiczenia a w między czasie książka. Nie jestem zmuszona wybierać. No i pewnie, że czasami człowiek traci koncentrację i musi przewinąć kilka minut wstecz, lub przerwać czynność, którą akurat wykonywał...Niemniej ta możliwość daje nam wiele opcji łączenia przyjemnego z (również przyjemnym) i pożytecznym. Abstrahując od wygody , siedząc przed komputerem służbowo 8 godzin dziennie, moje oczy naprawdę miewają dosyć koncentracji. Skupienie wzroku po pracy na kartkach wielokrotnie spowodowało drzemkę po dwóch i pół strony, a przez to łapałam się na tym, że zwyczajnie coraz częściej rezygnuję z lektury.
+
+Czytam więc Uszami i trudno mi wyobrazić sobie życie bez Audioobooków.
+
+Seks za pomocą zabawek też jest dostępny od ręki, higieniczny i wygodny.
+
+Pingwinki, króliczki i kuleczki. Dla kazdej płci. Co tam chcecie. Ba ! Wibratorami można już sterować z dowolnego miejsca na świecie
+
+(oczywiście gdyby tylko komuś brakowało elementu siły sprawczej ;)) Łatwiej o szybki orgazm, wibrator nie kłamie i nie przyniesie Ci do domu choroby wenerycznej.
+
+No i O.
+
+I niby od czasu do czasu podejmuję próby powrotu na łono analogii , ale ta z czasem zaczęła mi się wydawać mało atrakcyjna.
+
+Skoro myśli i wyobrażenia potrafią wywoływać prawdziwe uczucia i emocje, to może granica pomiędzy tym co próbujemy nazwać "prawdziwym" a VR wcale nie jest taka znacząca ?
+
+A gdyby za "prawdziwe" uznawać to co nasz mózg odczytuje jako "prawdziwe"?
+
+Może czas przestać się siłować ze sobą i zmienić myślenie? Skupić się na potencjale tej fali?
+
+Marka Ray Ban ( zdaję się, że we współpracy z Metą Marka Zuckerberga ) wypuściła okulary, które umożliwiają streaming widzianego obrazu w czasie rzeczywistym. Od razu wraca do mnie Universum z filmu Anon z Clivem Owenem, czy jeden z odcinków Black Mirror. Kto wie? Może już niedługo na Redtube powstanie odrębna kategoria **Ray-ban Porn Live,** a każdy spotkany okularnik będzie potencjalnie- streamerem, prowadzącym właśnie relacje na żywo?
+
+Może i my zaczniemy się w końcu zachowywać w przestrzeni publicznej, wszak nie chcemy by obserwatorzy myśleli o nas źle?
+
+No i pal licho, że motywacja trefna jeśli skutek okej.;)
+
+Miłego Tygodnia
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSt5j9w4qtK68EoqzMh1WdGNN8eiHKAVHkOFKguFNJUa4u4o9QM0eigKSzB45kokykHXVFuP4TGo8XKY5o3yqUo_x6E4LPzg01Cmo1mvBsHhGrRKQ0Gfe4x7xbtjT-zkDStMs0eLh3Ef-qnSnmjtnfGfrkPUI8loQ2Mi9B3VD2bYiiuHJABH2bkz53jQ/w640-h360/Rozmawiam%20palcami,%20czytam%20uszami%20a%20na%20dok%C5%82adk%C4%99%20zaspokajam%20si%C4%99%20k%C3%B3liczkami%20na%20baterie%20(2).png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSt5j9w4qtK68EoqzMh1WdGNN8eiHKAVHkOFKguFNJUa4u4o9QM0eigKSzB45kokykHXVFuP4TGo8XKY5o3yqUo_x6E4LPzg01Cmo1mvBsHhGrRKQ0Gfe4x7xbtjT-zkDStMs0eLh3Ef-qnSnmjtnfGfrkPUI8loQ2Mi9B3VD2bYiiuHJABH2bkz53jQ/s1640/Rozmawiam%20palcami,%20czytam%20uszami%20a%20na%20dok%C5%82adk%C4%99%20zaspokajam%20si%C4%99%20k%C3%B3liczkami%20na%20baterie%20(2).png)
