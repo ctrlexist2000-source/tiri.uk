@@ -1,0 +1,29 @@
+# TIRI — Minimal Editorial Blog Theme
+
+A minimal editorial blog theme built with pure HTML, CSS, and vanilla JavaScript.  
+No frameworks. No build tools. No dependency labyrinth assembled by exhausted frontend shamans at 2 a.m. Just static files that work.
+
+Designed for writers, artists, introverts, and people who still believe the internet looked better before every website became a productivity dashboard disguised as a mood board.
+
+---
+
+## Features
+
+- **Zero dependencies****:** no npm, no bundlers, no frameworks
+- **Editorial minimalist aesthetic**:** stark white background, black typography, refined serif headings
+- **Fullscreen hero banner**:** immersive landing section with custom imagery
+- **Scroll-reactive navigation**:** transparent over hero, solid after scroll
+- **Intersection Observer animations**:** subtle staggered reveal effects
+- **Responsive layout**:** optimized for desktop, tablet, and mobile
+- **GitHub Pages compatible**:** deploy in minutes
+- **Single-file simplicity**:** easy to edit, extend, and maintain
+
+---
+
+## Project Structure
+
+```text
+/
+├── index.html                # Main blog page
+├── TIRI_UK_BANNER_2026.png   # Hero / featured image
+└── README.md
