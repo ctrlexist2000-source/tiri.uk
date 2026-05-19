@@ -4,176 +4,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>O mnie — TIRI</title>
+  <title>Archives — TIRI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet" />
   
   <style>
+    /* === Wklej tutaj CAŁY <style> z index.html (od * do końca animacji) === */
+    /* (żeby było identycznie) */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --white: #ffffff;
-      --black: #000000;
-      --grey-100: #f5f5f5;
-      --grey-200: #e8e8e8;
-      --grey-400: #999999;
-      --grey-600: #555555;
-      --serif: 'Cormorant Garamond', serif;
-      --mono: 'Geist Mono', monospace;
+      --white: #ffffff; --black: #000000; --grey-100: #f5f5f5;
+      --grey-200: #e8e8e8; --grey-400: #999999; --grey-600: #555555;
+      --serif: 'Cormorant Garamond', serif; --mono: 'Geist Mono', monospace;
       --sans: 'Geist', sans-serif;
     }
 
+    body { background: var(--white); color: var(--black); font-family: var(--sans); font-weight: 300; }
     html { scroll-behavior: smooth; }
 
-    body {
-      background: var(--white);
-      color: var(--black);
-      font-family: var(--sans);
-      font-weight: 300;
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.75;
-    }
+    /* NAV (taki sam jak na głównej) */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 3rem; background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--grey-200); backdrop-filter: blur(8px); }
+    .nav-logo { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: 0.12em; color: var(--black); text-decoration: none; }
 
-    /* NAV - dokładnie jak na głównej */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.6rem 3rem;
-      transition: background 0.4s, border-color 0.4s;
-    }
-    nav.scrolled {
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--grey-200);
-      backdrop-filter: blur(8px);
-    }
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      color: var(--white);
-      text-decoration: none;
-    }
-    nav.scrolled .nav-logo { color: var(--black); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 3rem; }
 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
-    .nav-links a {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: rgba(255,255,255,0.75);
-    }
-    nav.scrolled .nav-links a { color: var(--grey-600); }
-    .nav-links a:hover { color: var(--black) !important; }
+    .page-header { padding-top: 140px; margin-bottom: 5rem; }
+    .page-header h1 { font-family: var(--serif); font-size: 3.8rem; font-weight: 300; letter-spacing: -0.02em; }
 
-    /* HERO - dopasowany do stylu głównej */
-    .about-hero {
-      height: 100vh;
-      min-height: 680px;
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
-                  url('https://ctrlexist.my.canva.site/_assets/media/6a989a086c8849a918ac9b989439b2a0.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-
-    .hero-content h1 {
-      font-family: var(--serif);
-      font-size: clamp(3.8rem, 8.5vw, 6.8rem);
-      font-weight: 300;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-    }
-
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .about-content {
-      padding: 7rem 0 9rem;
-    }
-    .about-content h2 {
-      font-family: var(--serif);
-      font-size: 2.5rem;
-      margin-bottom: 2.4rem;
-      font-weight: 300;
-    }
-    .about-content p {
-      font-size: 1.07rem;
-      color: var(--grey-600);
-      margin-bottom: 1.85rem;
-    }
-
-    footer {
-      border-top: 1px solid var(--grey-200);
-      padding: 3rem 0 2rem;
-      text-align: center;
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      color: var(--grey-400);
-    }
+    /* Archiwum - styl jak stary Hugo */
+    .archive-year { margin-bottom: 5.5rem; }
+    .archive-year-header { font-family: var(--serif); font-size: 2.6rem; margin-bottom: 2.5rem; border-bottom: 1px solid var(--black); padding-bottom: 1rem; }
+    .archive-month { margin-bottom: 2.8rem; }
+    .archive-month-header { font-family: var(--mono); font-size: 1.1rem; color: var(--grey-600); margin-bottom: 1.2rem; letter-spacing: 0.08em; }
+    .archive-entry { padding: 1.1rem 0; border-bottom: 1px solid var(--grey-200); }
+    .archive-entry-title a { font-family: var(--serif); font-size: 1.48rem; color: inherit; text-decoration: none; }
+    .archive-entry-title a:hover { text-decoration: underline; }
+    .archive-meta { font-family: var(--mono); font-size: 0.78rem; color: var(--grey-400); margin-top: 0.3rem; }
   </style>
 </head>
 <body>
 
-  <nav id="nav">
+  <nav>
     <a href="/" class="nav-logo">TIRI</a>
-    <ul class="nav-links">
+    <ul class="nav-links" style="display:flex; gap:2.5rem; list-style:none;">
       <li><a href="/">Home</a></li>
+      <li><a href="/archives.html">Archives</a></li>
       <li><a href="/about.html">O mnie</a></li>
-      <li><a href="#writing">Writing</a></li>
     </ul>
   </nav>
 
-  <section class="about-hero">
-    <div class="hero-content">
-      <h1>O mnie</h1>
+  <div class="container">
+    <div class="page-header">
+      <h1>Archives</h1>
+      <p>Wszystkie wpisy • chronologicznie</p>
     </div>
-  </section>
 
-  <div class="about-content container">
-    <h2>Czołem.</h2>
-    <p>Jestem. I to już całkiem dobry początek.</p>
-    <p>Łatwiej byłoby jednak powiedzieć, kim nie jestem. Na pewno nie mistrzynią autoprezentacji. <strong>„Cyniczna idealistka”</strong> brzmi najuczciwiej.</p>
-    <p>Wierzę w ludzi, jednocześnie regularnie tracąc do nich cierpliwość. Taka drobna sprzeczność napędzająca całe życie.</p>
-    <p>Od ponad 11 lat mieszkam w Kent, w Wielkiej Brytanii.</p>
-    <p>Piszę, obserwuję, analizuję. Wieczny researcher z tendencją do zadawania zbyt wielu pytań i otwierania zbyt wielu zakładek.</p>
-    <p>Uwielbiam stawiać pierwsze litery na pustej kartce. Znacznie gorzej idzie mi stawianie kropek.</p>
-    <p>Ostatnio w bliskiej relacji z <a href="http://CTRLexist.com" target="_blank">@imagination</a></p>
-    
-    <p style="margin-top: 4rem;">
-      Chcesz pogadać, zaprosić mnie do współpracy albo po prostu napisać?<br>
-      → <strong>Ann@CTRLexist.com</strong>
-    </p>
+    <!-- Tutaj wstaw wpisy pogrupowane po roku i miesiącu -->
+    <!-- Możesz je generować ręcznie lub później przez JS -->
+
   </div>
 
-  <footer>
-    © 2026 TIRI — Personal Journal
-  </footer>
-
-  <script>
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
-  </script>
 </body>
 </html>
-```
-
