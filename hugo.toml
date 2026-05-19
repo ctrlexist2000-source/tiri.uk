@@ -1,6 +1,6 @@
-baseURL = "https://tiri.uk/"
-languageCode = "en-us"
-title = "Tiri's Blog"
+baseURL = "https://www.tiri.uk/"
+languageCode = "pl"
+title = "Tiri.Uk"
 theme = "PaperMod"
 paginate = 10
 defaultContentLanguage = "en"
