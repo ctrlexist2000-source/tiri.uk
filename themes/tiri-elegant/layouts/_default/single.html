@@ -1,50 +1,264 @@
 {{ define "main" }}
 
-{{/* ─── ARTICLE HEADER ─── */}}
-<header class="single-header">
-  <div class="container">
-    <div class="content-narrow">
-      <div class="single-meta reveal">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time>
-        <span>{{ .ReadingTime }} min read</span>
+<!-- Tailwind CDN and Fonts for Post View -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary-fixed-variant": "#424848",
+          "on-tertiary-fixed-variant": "#464748",
+          "tertiary-fixed-dim": "#c6c6c7",
+          background: "#ffffff",
+          "tertiary-fixed": "#e3e2e3",
+          "surface-bright": "#ffffff",
+          primary: "#000000",
+          outline: "#747878",
+          "on-surface-variant": "#2e2e33",
+          "secondary-fixed": "#e2e2e2",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#c6c6c7",
+          "inverse-primary": "#c2c7c8",
+          "surface-container-low": "#f5f5f5",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#1a1c1c",
+          "on-tertiary-container": "#757576",
+          "surface-container-high": "#e8e8e8",
+          "outline-variant": "rgba(46, 46, 51, 0.12)",
+          "surface-variant": "#e2e2e2",
+          "on-primary-fixed": "#171d1d",
+          "tertiary-container": "#fffeff",
+          "surface-dim": "#dadada",
+          "surface-container-highest": "#e2e2e2",
+          tertiary: "#5d5e5f",
+          "on-primary-container": "#717676",
+          "on-secondary-container": "#616363",
+          "on-tertiary": "#ffffff",
+          "inverse-on-surface": "#f1f1f1",
+          "primary-fixed": "#dee3e3",
+          "on-tertiary-fixed": "#1a1c1d",
+          "on-background": "#2e2e33",
+          "on-primary": "#ffffff",
+          secondary: "#2e2e33",
+          "primary-fixed-dim": "#c2c7c8",
+          error: "#ba1a1a",
+          "error-container": "#ffdad6",
+          "surface-container": "#eeeeee",
+          "surface-tint": "#5a5f60",
+          surface: "#ffffff",
+          "on-surface": "#2e2e33",
+          "secondary-container": "#dfe0e0",
+          "inverse-surface": "#303030",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed-variant": "#454747",
+          "primary-container": "#faffff"
+        },
+        borderRadius: {
+          DEFAULT: "0.125rem",
+          lg: "0.25rem",
+          xl: "0.5rem",
+          full: "0.75rem"
+        },
+        spacing: {
+          unit: "8px",
+          gutter: "32px",
+          "margin-mobile": "24px",
+          "margin-desktop": "64px",
+          "container-max": "1200px",
+          "section-gap": "128px"
+        },
+        fontFamily: {
+          "body-lg": ["Inter", "sans-serif"],
+          "headline-md": ["Amatic SC", "cursive"],
+          "label-caps": ["Inter", "sans-serif"],
+          "display-lg-mobile": ["Amatic SC", "cursive"],
+          "headline-lg": ["Amatic SC", "cursive"],
+          "display-lg": ["Amatic SC", "cursive"],
+          "body-md": ["Inter", "sans-serif"],
+          caption: ["Inter", "sans-serif"],
+          headline: ["Amatic SC"],
+          display: ["Amatic SC"],
+          body: ["Amatic SC"],
+          label: ["Amatic SC"]
+        },
+        fontSize: {
+          "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+          "headline-md": ["24px", {lineHeight: "32px", fontWeight: "400"}],
+          "label-caps": ["12px", {lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "700"}],
+          "display-lg-mobile": ["40px", {lineHeight: "48px", letterSpacing: "-0.01em", fontWeight: "400"}],
+          "headline-lg": ["32px", {lineHeight: "40px", fontWeight: "400"}],
+          "display-lg": ["64px", {lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "400"}],
+          "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+          caption: ["13px", {lineHeight: "18px", fontWeight: "400"}]
+        }
+      }
+    },
+    corePlugins: {
+      preflight: false
+    }
+  };
+</script>
+
+<style>
+  /* Styling rules to map Hugo rendered HTML content to the requested layout design */
+  .post-body-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2e2e33;
+    margin-bottom: 2rem;
+  }
+  .post-body-content p:first-of-type::first-letter {
+    font-size: 3.5rem;
+    font-family: 'Amatic SC', cursive;
+    float: left;
+    margin-right: 0.75rem;
+    line-height: 1;
+    margin-top: 0.15rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  .post-body-content h2, .post-body-content h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .post-body-content blockquote {
+    border-left: 2px solid #000000;
+    padding-left: 2rem;
+    margin: 3rem 0;
+    font-style: italic;
+  }
+  .post-body-content blockquote p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+  }
+  .post-body-content blockquote cite {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e33;
+    font-style: normal;
+  }
+  .post-body-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    margin: 2.5rem 0;
+  }
+</style>
+
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop bg-white">
+  <!-- Back to Home Link -->
+  <div class="pt-gutter pb-unit">
+    <a class="group flex items-center gap-2 font-label-caps text-label-caps text-secondary uppercase transition-colors hover:text-primary" href="{{ "/" | relURL }}">
+      <span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+      Back to home
+    </a>
+  </div>
+
+  <!-- Article Header -->
+  <article class="pt-8 pb-section-gap flex flex-col items-center">
+    <header class="w-full max-w-[800px] text-center mb-16 mx-auto">
+      <div class="flex items-center justify-center gap-4 mb-8">
+        {{ range .Params.categories }}
+        <span class="font-label-caps text-label-caps text-secondary border border-outline-variant px-3 py-1">{{ . | upper }}</span>
+        {{ end }}
+        <span class="font-label-caps text-label-caps text-secondary">{{ .Date.Format "January 2, 2006" | upper }}</span>
       </div>
-      <h1 class="single-title reveal reveal-delay-1">{{ .Title }}</h1>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">
+        {{ .Title }}
+      </h1>
+      {{ with .Description }}
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] mx-auto italic">
+        {{ . }}
+      </p>
+      {{ end }}
+    </header>
+
+    <!-- Featured Image -->
+    {{ with .Params.image }}
+    <div class="w-full mb-section-gap">
+      <img alt="{{ $.Title }}" class="w-full aspect-[21/9] object-cover grayscale brightness-95" src="{{ . | relURL }}"/>
     </div>
-  </div>
-</header>
+    {{ else }}
+      {{ with .Params.thumbnail }}
+      <div class="w-full mb-section-gap">
+        <img alt="{{ $.Title }}" class="w-full aspect-[21/9] object-cover grayscale brightness-95" src="{{ . | relURL }}"/>
+      </div>
+      {{ end }}
+    {{ end }}
 
-<div class="single-divider"></div>
+    <!-- Article Body Content -->
+    <div class="w-full max-w-[700px] flex flex-col gap-8 post-body-content">
+      {{ .Content }}
+      
+      <hr class="my-16 border-t border-outline-variant"/>
+      
+      <!-- Article Tags -->
+      {{ with .Params.tags }}
+      <div class="flex flex-wrap gap-2">
+        {{ range . }}
+        <span class="font-label-caps text-[10px] tracking-widest border border-outline px-2 py-1 uppercase">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </article>
 
-{{/* ─── ARTICLE CONTENT ─── */}}
-<article class="container">
-  <div class="content-narrow post-content reveal reveal-delay-2">
-    {{ .Content }}
-  </div>
-</article>
+  <!-- Newsletter Section (Bento Grid Inspired) -->
+  <section class="pb-section-gap">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-unit border border-outline-variant p-gutter bg-white">
+      <div class="md:col-span-7 flex flex-col justify-center gap-4">
+        <h3 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight">The Weekly Dispatch</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">Curated insights on architecture, design, and the philosophy of the essential. Delivered every Sunday morning.</p>
+      </div>
+      <div class="md:col-span-5 flex flex-col justify-center">
+        <form class="flex flex-col gap-4" action="#" method="POST">
+          <input class="w-full border-0 border-b border-primary bg-transparent py-4 font-body-md text-body-md focus:ring-0 focus:border-b-2 transition-all" placeholder="YOUR EMAIL ADDRESS" type="email" required/>
+          <button class="bg-primary text-on-primary font-label-caps text-label-caps py-4 hover:opacity-90 transition-opacity" type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-{{/* ─── POST NAVIGATION ─── */}}
-<div class="container">
-  <div class="content-narrow">
-    <nav class="post-nav">
+  <!-- Post Navigation Links -->
+  <section class="pb-section-gap border-t border-outline-variant pt-gutter">
+    <nav class="flex flex-row justify-between items-center gap-gutter">
       {{ with .PrevInSection }}
-      <a href="{{ .Permalink }}" class="post-nav-item post-nav-prev">
-        <span class="post-nav-label">← Previous</span>
-        <span class="post-nav-title">{{ .Title | truncate 60 }}</span>
+      <a href="{{ .Permalink }}" class="group flex flex-col items-start gap-1 text-left transition-colors">
+        <span class="font-label-caps text-[10px] tracking-widest text-secondary uppercase">← Previous</span>
+        <span class="font-headline-md text-headline-md text-primary group-hover:text-secondary-fixed-dim transition-colors">{{ .Title | truncate 40 }}</span>
       </a>
       {{ else }}
       <div></div>
       {{ end }}
 
       {{ with .NextInSection }}
-      <a href="{{ .Permalink }}" class="post-nav-item post-nav-next">
-        <span class="post-nav-label">Next →</span>
-        <span class="post-nav-title">{{ .Title | truncate 60 }}</span>
+      <a href="{{ .Permalink }}" class="group flex flex-col items-end gap-1 text-right transition-colors">
+        <span class="font-label-caps text-[10px] tracking-widest text-secondary uppercase">Next →</span>
+        <span class="font-headline-md text-headline-md text-primary group-hover:text-secondary-fixed-dim transition-colors">{{ .Title | truncate 40 }}</span>
       </a>
       {{ else }}
       <div></div>
       {{ end }}
     </nav>
-  </div>
+  </section>
 </div>
 
 {{ end }}

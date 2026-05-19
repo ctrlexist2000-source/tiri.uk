@@ -2,7 +2,7 @@
    TIRI ELEGANT — White Minimalism
    ═══════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -11,25 +11,32 @@
 }
 
 :root {
+  --canvas-white: #ffffff;
+  --ink-black: #000000;
+  --deep-charcoal: #2e2e33;
+  --neutral-accent: #f5f5f5;
+  --neutral-dim: #808080;
+  --border-hairline: rgba(46, 46, 51, 0.12);
+
   --white: #ffffff;
   --off-white: #fafafa;
-  --grey-50: #f7f7f7;
-  --grey-100: #f0f0f0;
-  --grey-200: #e4e4e4;
-  --grey-300: #d1d1d1;
-  --grey-400: #a0a0a0;
-  --grey-500: #717171;
-  --grey-600: #4a4a4a;
-  --grey-700: #333333;
-  --black: #111111;
+  --grey-50: #f5f5f5;
+  --grey-100: #f5f5f5;
+  --grey-200: rgba(46, 46, 51, 0.12);
+  --grey-300: #808080;
+  --grey-400: #808080;
+  --grey-500: #808080;
+  --grey-600: #2e2e33;
+  --grey-700: #2e2e33;
+  --black: #000000;
 
-  --serif: 'Cormorant Garamond', 'Georgia', serif;
-  --sans: 'Inter', -apple-system, 'Segoe UI', sans-serif;
-  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --serif: 'Amatic SC', cursive;
+  --sans: 'Inter', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
 
-  --max-width: 1200px;
+  --max-width: 1140px;
   --content-width: 720px;
-  --side-padding: 2.5rem;
+  --side-padding: 64px;
 }
 
 html {
@@ -448,7 +455,7 @@ img {
 
 .post-content img {
   margin: 2.5rem auto;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .post-content blockquote {
@@ -480,7 +487,7 @@ img {
   font-size: 0.88rem;
   background: var(--grey-50);
   padding: 0.15rem 0.4rem;
-  border-radius: 3px;
+  border-radius: 0;
   color: var(--grey-700);
 }
 
@@ -489,7 +496,7 @@ img {
   padding: 1.5rem;
   overflow-x: auto;
   margin: 2rem 0;
-  border-radius: 4px;
+  border-radius: 0;
   border: 1px solid var(--grey-100);
 }
 
