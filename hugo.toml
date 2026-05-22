@@ -15,6 +15,10 @@ summaryLength = 40
 
 [author]
   name = "Tiri"
+  email = "CTRLexist2000@gmail.com"
+
+[author]
+  name = "Tiri"
   email = ""
 [outputs]
   home = ["HTML", "RSS"]
