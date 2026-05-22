@@ -1,19 +1,10 @@
-# Hugo
-/public/
-/resources/_gen/
-*.exe
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Environment
-.env
-.env.local
-
-# Dependencies
-node_modules/
+public/
+resources/
+.hugo_build.lock
+archives/
+categories/
+page/
+tags/
+index.html
+index.xml
+sitemap.xml
