@@ -17,9 +17,6 @@ summaryLength = 40
   name = "Tiri"
   email = "CTRLexist2000@gmail.com"
 
-[author]
-  name = "Tiri"
-  email = ""
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]
