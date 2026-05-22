@@ -1,5 +1,4 @@
 
-```yaml
 name: Deploy Hugo Site
 on:
   push:
