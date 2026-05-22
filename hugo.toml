@@ -12,6 +12,7 @@ summaryLength = 40
 [params]
   description = "Personal blog by Tiri"
   ShowReadingTime = true
+  mainSections = ["posts"] 
 
 [author]
   name = "Tiri"
