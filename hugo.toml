@@ -26,9 +26,9 @@ summaryLength = 40
     url = "/"
     weight = 10
   [[menu.main]]
-    identifier = "Archiwum"
-    name = "Archiwum"
-    url = "/archiwum/"
+    identifier = "Archives"
+    name = "Archives"
+    url = "/archives/"
     weight = 20
   [[menu.main]]
     identifier = "about"
