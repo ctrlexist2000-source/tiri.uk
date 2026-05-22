@@ -2,35 +2,46 @@
 name: Deploy Hugo Site
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main, master]
+  workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+
+      - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
           extended: false
-      
-      - name: Build site
-        run: hugo --minify
-      
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+
+      - uses: actions/configure-pages@v4
+
+      - run: hugo --minify --baseURL "https://ctrlexist2000-source.github.io/tiri.uk/"
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          force_orphan: true 
+          path: ./public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        
