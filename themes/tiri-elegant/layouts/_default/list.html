@@ -1,73 +1,25 @@
 {{ define "main" }}
-<div class="container">
 
-  {{ if .IsHome }}
-  {{/* ─── HOMEPAGE ─── */}}
-  <section class="page-home">
-
-    <div class="home-intro reveal">
-      <p class="home-intro-eyebrow">Personal Journal — est. 2020</p>
-      <h1 class="home-intro-title">Thoughts, stories<br/>& <em>everything in between.</em></h1>
-      <p class="home-intro-sub">A personal space for long-form writing, cultural reflections, and the quiet observations that shape everyday life.</p>
-    </div>
-
+<div class="page-wrapper posts">
+  <div class="container">
     <div class="section-header reveal">
-      <span class="section-number">—</span>
-      <h2 class="section-title">Recent entries</h2>
+      <h1 class="section-title">{{ .Title }}</h1>
     </div>
 
-    <ul class="post-list">
-      {{ range .Paginator.Pages }}
-      <li class="post-item reveal">
-        <a href="{{ .Permalink }}" class="post-link">
-          <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "02 Jan 2006" }}
-          </time>
-          <div class="post-info">
-            <h3 class="post-title">{{ .Title }}</h3>
-            {{ with .Summary }}
-            <p class="post-excerpt">{{ . | plainify | truncate 160 }}</p>
-            {{ end }}
-            <p class="post-reading-time">{{ .ReadingTime }} min read</p>
-          </div>
+    <div class="post-grid">
+      {{ range $index, $element := .Pages }}
+      <article class="post-card reveal {{ if eq (mod $index 3) 1 }}reveal-delay-1{{ else if eq (mod $index 3) 2 }}reveal-delay-2{{ end }}">
+        <a href="{{ .Permalink }}">
+          <p class="post-card-num">— {{ printf "%03d" (add $index 1) }}</p>
+          <p class="post-card-tag">{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ else }}Post{{ end }}</p>
+          <h3 class="post-card-title">{{ .Title | markdownify }}</h3>
+          <p class="post-card-excerpt">{{ with .Description }}{{ . | truncate 120 }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+          <span class="post-card-date">{{ .Date.Format "02 Jan 2006" }}</span>
         </a>
-      </li>
+      </article>
       {{ end }}
-    </ul>
-
-    {{/* Pagination */}}
-    {{ template "_internal/pagination.html" . }}
-
-  </section>
-
-  {{ else }}
-  {{/* ─── SECTION LIST (e.g. /posts/) ─── */}}
-  <section class="page-archives">
-    <div class="content-narrow">
-
-      <div class="section-header reveal">
-        <span class="section-number">—</span>
-        <h2 class="section-title">{{ .Title }}</h2>
-      </div>
-
-      <ul class="post-list">
-        {{ range .Pages }}
-        <li class="post-item reveal">
-          <a href="{{ .Permalink }}" class="post-link">
-            <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
-              {{ .Date.Format "02 Jan 2006" }}
-            </time>
-            <div class="post-info">
-              <h3 class="post-title">{{ .Title }}</h3>
-            </div>
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-
     </div>
-  </section>
-  {{ end }}
-
+  </div>
 </div>
+
 {{ end }}

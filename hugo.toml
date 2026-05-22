@@ -1,5 +1,5 @@
 baseURL = "https://www.tiri.uk/"
-languageCode = "pl"
+
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 paginate = 10

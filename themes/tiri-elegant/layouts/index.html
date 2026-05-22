@@ -1,0 +1,121 @@
+{{ define "main" }}
+
+  <!-- HERO -->
+  <section class="hero">
+    {{ $banner := "images/banner.png" }}
+    <img
+      class="hero-image"
+      src="{{ $banner | relURL }}"
+      alt="{{ .Site.Title }} — Personal blog hero"
+    />
+    
+  </section>
+
+  {{ $pages := .Site.RegularPages.ByDate.Reverse }}
+{{ $posts := where $pages "Section" "posts" }}
+{{ $latestPosts := first 10 $posts }}
+{{ $featured := first 1 $posts }}
+{{ $recent := first 10 (after 1 $posts) }}
+
+<section class="recent-posts">
+  <div class="container">
+    <h2 class="section-title reveal">Recent Posts</h2>
+    <ul class="recent-list">
+      {{ range $latestPosts }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+  <!-- FEATURED POST -->
+  {{ range $featured }}
+  <section class="featured" id="writing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01</span>
+        <h2 class="section-title">Featured</h2>
+      </div>
+      <div class="featured-grid">
+        <div>
+          <div class="featured-meta reveal">
+            <span>{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ else }}Essay{{ end }}</span>
+            <span>{{ .Date.Format "January 2006" }}</span>
+          </div>
+          <h2 class="featured-title reveal reveal-delay-1">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          </h2>
+          <p class="featured-excerpt reveal reveal-delay-2">
+            {{ with .Description }}{{ . }}{{ else }}{{ .Summary | truncate 200 }}{{ end }}
+          </p>
+          <a href="{{ .Permalink }}" class="read-more reveal reveal-delay-3">Read essay</a>
+        </div>
+        <div class="featured-image-block reveal reveal-delay-1">
+          {{ $img := .Params.cover.image | default "images/banner.png" }}
+          <img src="{{ $img | relURL }}" alt="Featured post image" />
+          <p class="featured-caption">London, 2026 &nbsp;—&nbsp; Photography by TIRI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- POST GRID -->
+  <section class="posts" id="posts">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02</span>
+        <h2 class="section-title">Recent Writing</h2>
+      </div>
+      <div class="post-grid">
+        {{ range $index, $element := $latestPosts }}
+        <article class="post-card reveal {{ if eq (mod $index 3) 1 }}reveal-delay-1{{ else if eq (mod $index 3) 2 }}reveal-delay-2{{ end }}">
+          <a href="{{ .Permalink }}">
+            <p class="post-card-num">— {{ printf "%03d" (add $index 1) }}</p>
+            <p class="post-card-tag">{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ else }}Reflection{{ end }}</p>
+            <h3 class="post-card-title">{{ .Title | markdownify }}</h3>
+            <p class="post-card-excerpt">{{ with .Description }}{{ . | truncate 120 }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+            <span class="post-card-date">{{ .Date.Format "02 Jan 2006" }}</span>
+          </a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <button id="about-toggle" class="about-toggle btn-primary">About</button>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-name reveal">
+          TIRI<br/>
+          <em>UK</em>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="about-text">
+  <p>Czołem.</p>
+  <p>Jestem. I to już całkiem dobry początek.</p>
+  <p>Łatwiej byłoby jednak powiedzieć, kim nie jestem. Na pewno nie mistrzynią autoprezentacji. „Cyniczna idealistka” brzmi najuczciwiej.</p>
+  <p>Wierzę w ludzi, jednocześnie regularnie tracąc do nich cierpliwość. Taka drobna sprzeczność napędzająca całe życie.</p>
+  <p>Od ponad 11 lat mieszkam w Kent, w Wielkiej Brytanii.</p>
+  <p>Piszę, obserwuję, analizuję. Wieczny researcher z tendencją do zadawania zbyt wielu pytań i otwierania zbyt wielu zakładek.</p>
+  <p>Uwielbiam stawiać pierwsze litery na pustej kartce. Znacznie gorzej idzie mi stawianie kropek.</p>
+  <p>Ostatnio w bliskiej relacji z @imagination</p>
+  <p>Chcesz pogadać, zaprosić mnie do współpracy albo po prostu napisać?<br/>→ <a href="mailto:CTRLexist2000@gmail.com">CTRLexist2000@gmail.com</a></p>
+</div>
+          <div class="about-links">
+            {{ with .Site.Params.instagram }}<a href="{{ . }}">Instagram</a>{{ end }}
+            <a href="#">Twitter / X</a>
+            <a href="#">Press</a>
+            <a href="#">Work with me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

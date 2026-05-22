@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.Language.Lang | default "en" }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   <meta name="author" content="{{ .Site.Params.author }}" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
@@ -26,69 +31,94 @@
   {{ end }}
 </head>
 <body>
-  <div class="site-wrapper">
 
-    {{/* ─── NAVIGATION ─── */}}
-    <nav class="site-nav">
-      <div class="container">
-        <div class="nav-inner">
-          <a href="{{ "/" | relURL }}" class="nav-logo">TIRI</a>
-          <ul class="nav-links">
-            {{ range .Site.Menus.main }}
-              <li>
-                <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
-          </ul>
+  <!-- NAV -->
+  <nav id="nav" class="{{ if not .IsHome }}static{{ end }}">
+    <a href="{{ "/" | relURL }}" class="nav-logo">TIRI</a>
+      <ul class="nav-links">
+
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
+        <li><a href="https://ctrlexist.my.canva.site/about-me">About</a></li>
+
+        <li><a href="https://ctrlexist.my.canva.site/connect">Contact</a></li>
+        <li><a href="{{ "archiwum/" | relURL }}">Archiwum</a></li>
+      </ul>
+  </nav>
+
+  {{/* ─── MAIN CONTENT ─── */}}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- NEWSLETTER (Global) -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <p class="newsletter-eyebrow reveal">Stay in touch</p>
+      <h2 class="newsletter-title reveal reveal-delay-1">
+        New essays,<br/><em>in your inbox.</em>
+      </h2>
+      <p class="newsletter-sub reveal reveal-delay-2">No noise. Just writing, when it's ready.</p>
+      <div class="newsletter-form reveal reveal-delay-3">
+  <input type="email" placeholder="your@email.com" />
+  <button type="button">Subscribe</button>
+</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">TIRI</span>
+        <span class="footer-copy">© {{ now.Year }} — All rights reserved</span>
+        <div class="footer-socials">
+          <a href="#">IG</a>
+          <a href="#">X</a>
+          <a href="{{ "/index.xml" | relURL }}">RSS</a>
         </div>
       </div>
-    </nav>
-
-    {{/* ─── HERO BANNER (homepage only) ─── */}}
-    {{ if .IsHome }}
-    <div class="hero-banner">
-      <img src="{{ "images/banner.png" | relURL }}" alt="{{ .Site.Title }} — Banner" />
     </div>
+  </footer>
+
+  <script>
+    // Nav scroll state (only dynamic on homepage)
+    {{ if .IsHome }}
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
     {{ end }}
 
-    {{/* ─── MAIN CONTENT ─── */}}
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-
-    {{/* ─── FOOTER ─── */}}
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-inner">
-          <span class="footer-logo">TIRI</span>
-          <span class="footer-copy">© {{ now.Year }} {{ .Site.Title }}</span>
-          <div class="footer-links">
-            <a href="{{ "/index.xml" | relURL }}">RSS</a>
-            {{ with .Site.Params.instagram }}<a href="{{ . }}" target="_blank" rel="noopener">IG</a>{{ end }}
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  {{/* ─── SCROLL REVEAL ─── */}}
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const reveals = document.querySelectorAll('.reveal');
-      if (!reveals.length) return;
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    if (reveals.length) {
       const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            io.unobserve(e.target);
-          }
+        entries.forEach(e => { 
+          if (e.isIntersecting) { 
+            e.target.classList.add('visible'); 
+            io.unobserve(e.target); 
+          } 
         });
-      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0.12 });
       reveals.forEach(el => io.observe(el));
-    });
+    }
+
+      // About section toggle
+      const aboutSection = document.getElementById('about');
+      const aboutToggle = document.getElementById('about-toggle');
+      if (aboutSection && aboutToggle) {
+        // initially hidden
+        aboutSection.style.display = 'none';
+        const showAbout = (e) => {
+          e.preventDefault();
+          aboutSection.style.display = aboutSection.style.display === 'none' ? 'block' : 'none';
+        };
+        aboutToggle.addEventListener('click', showAbout);
+        const navAboutLink = document.querySelector('a[href="#about"]');
+        if (navAboutLink) {
+          navAboutLink.addEventListener('click', showAbout);
+        }
+      }
   </script>
 </body>
 </html>

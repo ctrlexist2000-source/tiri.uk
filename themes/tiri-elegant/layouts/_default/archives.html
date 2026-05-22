@@ -1,29 +1,26 @@
 {{ define "main" }}
-<div class="container">
-  <section class="page-archives">
-    <div class="content-narrow">
 
-      <div class="section-header reveal">
-        <span class="section-number">—</span>
-        <h2 class="section-title">Archives</h2>
-      </div>
-
-      {{ $pages := where .Site.RegularPages "Section" "posts" }}
-      {{ range $pages.GroupByDate "2006" }}
-      <div class="archive-year reveal">
-        <h3 class="archive-year-title">{{ .Key }}</h3>
-        <ul class="archive-list">
-          {{ range .Pages }}
-          <li class="archive-item">
-            <span class="archive-item-date">{{ .Date.Format "02 Jan" }}</span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-
+<div class="page-wrapper posts">
+  <div class="container">
+    <div class="section-header reveal">
+      <h1 class="section-title">Archives</h1>
     </div>
-  </section>
+
+    <div class="post-grid">
+      {{ $pages := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
+      {{ range $index, $element := $pages }}
+      <article class="post-card reveal {{ if eq (mod $index 3) 1 }}reveal-delay-1{{ else if eq (mod $index 3) 2 }}reveal-delay-2{{ end }}">
+        <a href="{{ .Permalink }}">
+          <p class="post-card-num">— {{ printf "%03d" (add $index 1) }}</p>
+          <p class="post-card-tag">{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ else }}Post{{ end }}</p>
+          <h3 class="post-card-title">{{ .Title | markdownify }}</h3>
+          <p class="post-card-excerpt">{{ with .Description }}{{ . | truncate 120 }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+          <span class="post-card-date">{{ .Date.Format "02 Jan 2006" }}</span>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
 </div>
+
 {{ end }}
