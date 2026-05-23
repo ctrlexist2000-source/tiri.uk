@@ -1,0 +1,93 @@
+/* Main stylesheet for Tiri site */
+:root {
+  --font-primary: 'Amatic SC', cursive;
+  --font-mono: 'Space Mono', monospace;
+  --color-bg: #f8f9fa;
+  --color-fg: #212529;
+  --color-primary: #0d6efd;
+  --spacing: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 4rem var(--spacing);
+  text-align: center;
+  margin-bottom: var(--spacing);
+  border-radius: 12px;
+}
+.banner-title {
+  font-family: var(--font-primary);
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1.2;
+}
+.banner-sub {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Post cards */
+.post-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  padding: var(--spacing);
+  transition: transform .2s;
+}
+.post-card:hover { transform: translateY(-4px); }
+.post-title { margin: 0 0 .5rem; font-weight: 600; }
+.post-summary { margin: 0 0 .5rem; color: #555; }
+.post-date { font-size: .85rem; color: #999; }
+
+/* Shortcuts */
+.shortcuts {
+  background: #fff;
+  padding: var(--spacing);
+  margin-top: var(--spacing);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+.shortcuts-title {
+  font-family: var(--font-primary);
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+.shortcuts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.shortcut-item a {
+  font-family: var(--font-mono);
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+.shortcut-item a:hover {
+  background: #0b5ed7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-title { font-size: 3rem; }
+  .banner-sub { font-size: 1.2rem; }
+}
