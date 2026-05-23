@@ -1,4 +1,4 @@
 ---
 title: "Archiwum"
-layout: "archiwum"
----
+layout: "archives"
+type: "archiwum"
