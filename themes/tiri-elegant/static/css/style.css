@@ -480,4 +480,6 @@ footer {
   #menu a {
     font-size: 0.65rem;
   }
+}h1, h2, h3 {
+  font-family: var(--serif);
 }
