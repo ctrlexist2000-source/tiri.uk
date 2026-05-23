@@ -118,7 +118,7 @@ nav,
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url('/tiri.uk/images/exist-since-1991.png');
+  background-image: url('/images/exist-since-1991.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 85% center;
@@ -126,59 +126,6 @@ nav,
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-@media (max-width: 700px) {
-
-  .container,
-  .footer-inner,
-  .single-content,
-  .single-header,
-  .page-archives {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-  }
-
-  .hero {
-    min-height: 70vh;
-  }
-
-  .post-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .section-heading {
-    font-size: 3rem;
-  }
-
-  .single-title {
-    font-size: 3rem;
-  }
-
-  .about-name {
-    font-size: 3rem;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .post-link {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .nav-links,
-  #menu {
-    gap: 1rem;
-  }
-
-  .nav-links a,
-  #menu a {
-    font-size: 0.65rem;
-  }
 }
 /* ─────────────────────────────
    HOME
@@ -482,9 +429,7 @@ footer {
   }
 
   .hero {
-  min-height: 70vh;
-}
-   
+    min-height: 70vh;
   }
 
   .post-grid {
