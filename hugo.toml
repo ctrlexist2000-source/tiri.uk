@@ -1,5 +1,4 @@
 baseURL = "https://ctrlexist2000-source.github.io/tiri.uk"
-
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
@@ -9,10 +8,10 @@ buildDrafts = false
 buildFuture = false
 summaryLength = 40
 
-[[params]
+[params]
   description = "Personal blog by Tiri"
   ShowReadingTime = true
-  mainSections = ["posts"]]
+  mainSections = ["posts"]
 
 [author]
   name = "Tiri"
@@ -29,12 +28,11 @@ summaryLength = 40
     name = "Home"
     url = "/"
     weight = 10
-  
   [[menu.main]]
-  identifier = "archiwum"
-  name = "Archiwum"
-  url = "/archiwum/"
-  weight = 25
+    identifier = "archiwum"
+    name = "Archiwum"
+    url = "/archiwum/"
+    weight = 25
   [[menu.main]]
     identifier = "about"
     name = "About"
