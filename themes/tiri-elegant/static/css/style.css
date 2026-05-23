@@ -656,7 +656,87 @@ footer {
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
+/* ─── HOME PAGE ─── */
+.recent-section {
+  padding: 6rem 0 8rem;
+}
 
+.section-heading {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--black);
+}
+
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--grey-200);
+  transition: border-color 0.3s;
+}
+.post-card a:hover { border-color: var(--black); }
+
+.post-card .post-title {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .post-date {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--grey-400);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-card .post-summary {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  color: var(--grey-600);
+}
+
+/* ─── SHORTCUTS ─── */
+.shortcuts {
+  margin-top: 5rem;
+}
+
+.shortcuts-title {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 1rem;
+}
+
+.shortcuts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.shortcuts-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.shortcut-link {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--grey-600);
+  transition: color 0.3s;
+}
+.shortcut-link:hover { color: var(--black); }
 .social-grid a:hover {
   border-bottom: 1px solid rgba(255,255,255,0.4);
 }
