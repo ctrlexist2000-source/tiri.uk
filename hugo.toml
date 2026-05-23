@@ -1,40 +1,24 @@
-baseURL = "https://ctrlexist2000-source.github.io/tiri.uk"
+baseURL = "https://ctrlexist2000-source.github.io/tiri.uk/"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-buildDrafts = false
-buildFuture = false
-summaryLength = 40
+
+defaultContentLanguage = "pl"   # ← Change to Polish if most content is in Polish
+
+# Content configuration
+disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Personal blog by Tiri"
-  ShowReadingTime = true
   mainSections = ["posts"]
 
-[author]
-  name = "Tiri"
-  email = "CTRLexist2000@gmail.com"
+# Better archive support
+[[menu.main]]
+  name = "Archiwum"
+  url = "/archiwum/"
+  weight = 25
 
-[outputs]
-  home = ["HTML", "RSS"]
-  page = ["HTML"]
-  section = ["HTML", "RSS"]
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menu.main]]
-    identifier = "archiwum"
-    name = "Archiwum"
-    url = "/archiwum/"
-    weight = 25
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 30
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 30
