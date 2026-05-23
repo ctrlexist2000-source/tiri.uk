@@ -1,7 +1,4 @@
 ---
 title: "Archiwum"
-layout: "list"
-url: "/archiwum/"
+layout: "archives"
 ---
-
-All posts organized by date.

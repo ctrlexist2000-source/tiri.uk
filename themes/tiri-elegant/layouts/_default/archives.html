@@ -1,12 +1,19 @@
 {{ define "main" }}
-<div class="container">
+<div class="container" style="padding-top: 120px;">
   <h1>{{ .Title }}</h1>
-  <p>Total posts: {{ len .Site.RegularPages }}</p>
-  <ul>
-    {{ range .Site.RegularPages }}
-      <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} - {{ .Title }}</a></li>
+
+  {{ $posts := where .Site.RegularPages "Section" "posts" | .Site.RegularPages.ByDate.Reverse }}
+  <p>Wszystkich wpisów: {{ len $posts }}</p>
+
+  <ul style="list-style:none; padding:0;">
+    {{ range $posts }}
+    <li style="margin-bottom: 0.8rem;">
+      <span style="color: #999; font-size: 0.8rem; margin-right: 1rem;">
+        {{ .Date.Format "2006-01-02" }}
+      </span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
     {{ end }}
   </ul>
-
 </div>
 {{ end }}
