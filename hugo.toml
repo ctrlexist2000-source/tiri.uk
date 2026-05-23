@@ -1,24 +1,32 @@
 baseURL = "https://ctrlexist2000-source.github.io/tiri.uk/"
 title = "Tiri.Uk"
-theme = "tiri-elegant"
+theme = "PaperMod"
 publishDir = "docs"
 
 defaultContentLanguage = "pl"
 
-# Content configuration
 disableKinds = ["taxonomy", "term"]
 
 [params]
   mainSections = ["posts"]
 
-# Better archive support
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
 [[menu.main]]
   name = "Archiwum"
-  url = "https://ctrlexist2000-source.github.io/tiri.uk/archiwum//"
+  url = "/archiwum/"
   weight = 25
 
 [[menu.main]]
-  identifier = "about"
   name = "About"
-  url = "/about/"
+  url = "https://ctrlexist.my.canva.site/about-me"
   weight = 30
+
+[[menu.main]]
+  name = "Contact"
+  url = "https://ctrlexist.my.canva.site/connect"
+  weight = 40
