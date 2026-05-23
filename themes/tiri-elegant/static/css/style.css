@@ -122,7 +122,7 @@ nav,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 85% center;
-  background-color: #000;
+  background-color: transparent;
   display: flex;
   align-items: center;
   overflow: hidden;

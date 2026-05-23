@@ -46,6 +46,10 @@
       </ul>
   </nav>
 
+  {{ if not .IsHome }}
+  <section class="hero-banner"></section>
+  {{ end }}
+
   {{/* ─── MAIN CONTENT ─── */}}
   <main>
     {{ block "main" . }}{{ end }}
