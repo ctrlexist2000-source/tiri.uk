@@ -1,6 +1,6 @@
 baseURL = "https://ctrlexist2000-source.github.io/tiri.uk/"
 title = "Tiri.Uk"
-theme = "PaperMod"
+theme = "tiri-elegant"
 publishDir = "docs"
 
 defaultContentLanguage = "pl"
@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  url = "/"
+  url = "/tiri.uk/"
   weight = 1
 
 [[menu.main]]

@@ -1,3 +1,4 @@
 ---
 title: "Archiwum"
+layout: "archives"
 ---
