@@ -480,4 +480,32 @@ footer {
   #menu a {
     font-size: 0.65rem;
   }
+}h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
