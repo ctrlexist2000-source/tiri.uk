@@ -31,9 +31,9 @@ jobs:
 
       - run: hugo --minify --baseURL "https://ctrlexist2000-source.github.io/tiri.uk/"
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
-          path: ./public
+          path: ./docs
 
   deploy:
     runs-on: ubuntu-latest
