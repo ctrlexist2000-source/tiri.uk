@@ -9,10 +9,10 @@ buildDrafts = false
 buildFuture = false
 summaryLength = 40
 
-[params]
+[[params]
   description = "Personal blog by Tiri"
   ShowReadingTime = true
-  # mainSections = ["posts"] 
+  mainSections = ["posts"]]
 
 [author]
   name = "Tiri"

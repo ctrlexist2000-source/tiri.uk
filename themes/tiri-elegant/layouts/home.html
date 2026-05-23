@@ -1,9 +1,7 @@
 {{ define "main" }}
-
 <section class="hero">
   <img class="hero-image" src="{{ "images/banner.png" | relURL }}" alt="Tiri" />
 </section>
-
 <section class="recent-section">
   <div class="container">
     <h2 class="section-heading">Najnowsze wpisy</h2>
@@ -20,14 +18,13 @@
       {{ end }}
     </div>
     <div class="shortcuts">
-      <h2 class="shortcuts-title">Skróty</h2>
+      <h2 class="shortcuts-title">Skroty</h2>
       <ul class="shortcuts-list">
         {{ range $posts }}
-        <li><a href="{{ .Permalink }}" class="shortcut-link">— {{ .Title }}</a></li>
+        <li><a href="{{ .Permalink }}" class="shortcut-link">-- {{ .Title }}</a></li>
         {{ end }}
       </ul>
     </div>
   </div>
 </section>
-
 {{ end }}
