@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  <div class="post-grid">
+    {{ $posts := .Site.RegularPages | first 10 }}
+    {{ range $posts }}
+      <article class="post-card">
+        <a href="{{ .Permalink }}">
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary }}</p>
+          <span>{{ .Date.Format "02 Jan 2006" }}</span>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

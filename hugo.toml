@@ -1,8 +1,8 @@
-baseURL = "https://ctrlexist2000-source.github.io/tiri.uk/"
+baseURL = "/"
 
 title = "Tiri.Uk"
 theme = "tiri-elegant"
-paginate = 10
+publishDir = "docs"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 buildDrafts = false
@@ -32,8 +32,11 @@ summaryLength = 40
   [[menu.main]]
     identifier = "Archives"
     name = "Archives"
-    url = "/archives/"
-    weight = 20
+  [[menu.main]]
+    identifier = "Archiwum"
+    name = "Archiwum"
+    url = "/archiwum/"
+    weight = 25
   [[menu.main]]
     identifier = "about"
     name = "About"
