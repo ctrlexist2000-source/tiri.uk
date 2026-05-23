@@ -483,3 +483,17 @@ footer {
 }h1, h2, h3 {
   font-family: var(--serif);
 }
+.hero {
+  min-height: 100vh;
+  background-image: url('/tiri.uk/images/exist-since-1991.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 75% center;
+  }
+}
