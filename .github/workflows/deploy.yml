@@ -29,7 +29,7 @@ jobs:
 
       - uses: actions/configure-pages@v4
 
-      - run: hugo --minify --baseURL "https://ctrlexist2000-source.github.io/tiri.uk/"
+      - run: hugo --minify --baseURL "https://ctrlexist2000-source.github.io/tiri.uk/" --destination docs
 
       - uses: actions/upload-pages-artifact@v4
         with:
