@@ -117,20 +117,22 @@ nav,
 
 .hero {
   width: 100%;
-  min-height: 92vh;
+  min-height: 100vh;
+  background-image: url('/tiri.uk/images/exist-since-1991.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
-  padding-top: 2rem;
 }
 
-.hero-image {
-  width: 100%;
-  max-width: 1500px;
-  height: auto;
-  display: block;
-  object-fit: contain;
+@media (max-width: 768px) {
+  .hero {
+    background-position: 75% center;
+    min-height: 70vh;
+  }
 }
 
 /* ─────────────────────────────
