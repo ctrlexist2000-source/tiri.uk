@@ -1,17 +1,16 @@
 {{ define "main" }}
-<div class="container" style="padding-top: 120px;">
-  <h1>{{ .Title }}</h1>
-
-  {{ $posts := where .Site.RegularPages.ByDate.Reverse "Section" "posts" }}
-  <p>Wszystkich wpisów: {{ len $posts }}</p>
-
+<div class="container" style="padding-top: 120px; padding-bottom: 80px;">
+  <h1 style="margin-bottom: 2rem;">Archiwum</h1>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $posts = sort $posts "Date" "desc" }}
+  <p style="color: #999; margin-bottom: 2rem;">Wszystkich wpisów: {{ len $posts }}</p>
   <ul style="list-style:none; padding:0;">
     {{ range $posts }}
-    <li style="margin-bottom: 0.8rem;">
-      <span style="color: #999; font-size: 0.8rem; margin-right: 1rem;">
+    <li style="margin-bottom: 0.8rem; border-bottom: 1px solid #eee; padding-bottom: 0.8rem;">
+      <span style="color: #999; font-size: 0.8rem; margin-right: 1rem; font-family: monospace;">
         {{ .Date.Format "2006-01-02" }}
       </span>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>
