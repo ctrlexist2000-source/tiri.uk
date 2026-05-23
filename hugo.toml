@@ -3,7 +3,7 @@ title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
 
-defaultContentLanguage = "pl"   # ← Change to Polish if most content is in Polish
+defaultContentLanguage = "pl"
 
 # Content configuration
 disableKinds = ["taxonomy", "term"]
@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
 # Better archive support
 [[menu.main]]
   name = "Archiwum"
-  url = "/archiwum/"
+  url = "https://ctrlexist2000-source.github.io/tiri.uk/archiwum//"
   weight = 25
 
 [[menu.main]]
