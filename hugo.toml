@@ -33,10 +33,10 @@ summaryLength = 40
     identifier = "Archives"
     name = "Archives"
   [[menu.main]]
-    identifier = "Archiwum"
-    name = "Archiwum"
-    url = https://ctrlexist2000-source.github.io/tiri.uk/archives"
-    weight = 25
+  identifier = "archiwum"
+  name = "Archiwum"
+  url = "/archiwum/"
+  weight = 25
   [[menu.main]]
     identifier = "about"
     name = "About"
