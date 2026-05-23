@@ -10,7 +10,8 @@
 
     <div class="post-grid">
 
-      {{ range first 10 (where site.RegularPages "Section" "posts") }}
+      {{ $posts := (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+      {{ range first 10 $posts }}
 
         <article class="post-card">
 
