@@ -1,7 +1,7 @@
 baseURL = "https://tiri.uk/"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
-publishDir = "public"
+publishDir = "docs"
 
 defaultContentLanguage = "pl"
 
