@@ -2,11 +2,11 @@ name = "tiri-elegant"
 license = "MIT"
 licenselink = "https://github.com/yourname/tiri-elegant/blob/master/LICENSE"
 description = "Elegant white minimalist theme for personal journals"
-homepage = "https://www.tiri.uk"
+homepage = "https://tiri.uk"
 tags = ["blog", "minimal", "elegant", "journal"]
 features = ["blog"]
 min_version = "0.112.0"
 
 [author]
   name = "Tiri"
-  homepage = "https://www.tiri.uk"
+  homepage = "https:/tiri.uk"
