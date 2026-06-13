@@ -1,4 +1,7 @@
+HEAD
 baseURL = "tiri.uk"
+baseURL = "https://www.tiri.uk"
+ 0eeaf68f31e6e6bbf65ff826a34a50b41143faa8
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
