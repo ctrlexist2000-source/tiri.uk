@@ -1,4 +1,4 @@
-baseURL = "https://www.tiri.uk"
+baseURL = "https://tiri.uk"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
