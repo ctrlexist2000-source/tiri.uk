@@ -13,9 +13,8 @@ disableKinds = ["taxonomy", "term"]
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  URL = "https://ctrlexist2000-source.github.io/tiri.uk/"
+  url = "https://ctrlexist2000-source.github.io/tiri.uk/"
   weight = 1
-
 [[menu.main]]
   name = "Archiwum"
   url = "/archiwum/"
