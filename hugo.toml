@@ -1,4 +1,4 @@
-baseURL = "https://ctrlexist2000-source.github.io/tiri.uk/"
+baseURL = "tiri.uk"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
@@ -13,8 +13,7 @@ disableKinds = ["taxonomy", "term"]
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  url = "https://ctrlexist2000-source.github.io/tiri.uk/"
-  weight = 1
+  url = "tiri.uk"
 [[menu.main]]
   name = "Archiwum"
   url = "/archiwum/"
