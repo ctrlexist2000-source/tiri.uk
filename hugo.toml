@@ -1,4 +1,4 @@
-baseURL = "https://tiri.uk"
+baseURL = "https://www.tiri.uk"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"
@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  url = "tiri.uk"
+  url = "www.tiri.uk"
 [[menu.main]]
   name = "Archiwum"
   url = "/archiwum/"
