@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
 [[menu.main]]
   identifier = "home"
   name = "Home"
-  url = "www.tiri.uk"
+  url = "tiri.uk"
 [[menu.main]]
   name = "Archiwum"
   url = "/archiwum/"
