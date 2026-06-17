@@ -1,4 +1,5 @@
 baseURL = "https://tiri.uk/"
+disqusShortname = "tiri-uk"
 title = "Tiri.Uk"
 theme = "tiri-elegant"
 publishDir = "docs"

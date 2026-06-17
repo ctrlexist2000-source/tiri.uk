@@ -26,7 +26,23 @@ nav.scrolled, nav.static { background: rgba(255,255,255,0.96); border-bottom: 1p
 /* LAYOUT */
 .container { max-width: 1160px; margin: 0 auto; padding: 0 3rem; }
 /* HOME PAGE */
-.recent-section { padding: 6rem 0 8rem; }
-.section-heading { font-family: var(--serif); font-size: 3rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 3rem; padding-bottom: 1rem; border-bottom: 1px solid var(--black); }
-.post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-bottom: 2rem; }
+.recent-section { padding: 8rem 0 10rem; }
+.section-heading { font-family: var(--serif); font-size: 3.5rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 4rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--grey-200); }
+.post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; margin-bottom: 2rem; }
+
+.post-card {
+  padding: 1.5rem;
+  border: 1px solid var(--white); /* Invisible border for sizing */
+  border-bottom: 1px solid var(--grey-200);
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.post-card:hover {
+  border-color: var(--grey-200);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+  transform: translateY(-4px);
+  background: var(--white);
+}
+
 .post-card a { text-decoration: none; color: inherit; display: block; }
