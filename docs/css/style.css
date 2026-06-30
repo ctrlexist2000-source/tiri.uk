@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 3rem;
 }
@@ -80,7 +80,7 @@ nav,
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 1.75rem 3rem;
 }
@@ -136,9 +136,9 @@ nav,
 
 .hero-inner {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1450px;
   margin: 0 auto;
-  padding: 3rem 3rem;
+  padding: 3rem 3rem 1rem;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -171,9 +171,9 @@ nav,
 }
 
 .hero-portrait {
-  flex: 1 1 480px;
+  flex: 1 1 540px;
   max-width: 50%;
-  aspect-ratio: 3 / 4;
+  height: 520px;
   overflow: hidden;
 }
 
@@ -183,6 +183,7 @@ nav,
   object-fit: cover;
   object-position: top center;
   display: block;
+  transform: scale(1.25);
 }
 
 .hero-banner {
@@ -203,14 +204,12 @@ nav,
 ───────────────────────────── */
 
 .recent-section {
-  padding: 5rem 0 8rem;
+  padding: 2rem 0 8rem;
   width: 100%;
 }
 
 .recent-section .container {
-  max-width: none;
-  margin: 0;
-  padding: 0 0 0 3rem;
+  /* removed to let container center naturally */
 }
 
 .section-heading {
@@ -224,9 +223,9 @@ nav,
 
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 1450px;
 }
 
 .post-card {
@@ -448,7 +447,7 @@ footer {
 }
 
 .footer-inner {
-  max-width: 1240px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 2rem;
 
