@@ -47,7 +47,7 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 a {
@@ -59,7 +59,8 @@ a {
 ───────────────────────────── */
 
 nav,
-.header {
+.header,
+#nav {
   position: sticky;
   top: 0;
   z-index: 999;
@@ -69,22 +70,27 @@ nav,
 }
 
 .nav,
-.header nav {
+.header nav,
+#nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.75rem 3rem;
 }
 
 .logo,
 .logo a,
 .nav-logo {
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--black);
+  line-height: 1;
 }
 
 .nav-links,
@@ -117,16 +123,61 @@ nav,
 
 .hero {
   width: 100%;
-  min-height: 100vh;
-  background-image: url('../images/exist-since-1991.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 85% center;
-  background-color: transparent;
+  min-height: 85vh;
+  background: var(--white);
   display: flex;
   align-items: center;
   overflow: hidden;
 }
+
+.hero-inner {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text-block {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.hero-tagline {
+  font-family: var(--serif);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--grey-600);
+  margin-top: 0.25rem;
+}
+
+.hero-portrait {
+  flex: 0 1 480px;
+  max-width: 42%;
+}
+
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 /* ─────────────────────────────
    HOME
 ───────────────────────────── */
@@ -415,9 +466,29 @@ footer {
   .about-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-portrait {
+    max-width: 60%;
+    flex: 0 0 auto;
+  }
+
+  .hero {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 700px) {
+
+  .hero-portrait {
+    max-width: 75%;
+  }
 
   .container,
   .footer-inner,
@@ -426,10 +497,6 @@ footer {
   .page-archives {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-  }
-
-  .hero {
-    min-height: 70vh;
   }
 
   .post-grid {
@@ -469,3 +536,50 @@ footer {
   #menu a {
     font-size: 0.65rem;
   }
+}h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+}
+
+/* Removed duplicate hero size definitions – handled above */
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.site-nav {
+  position: sticky; top: 0; z-index: 999;
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--grey-200);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.75rem 0;
+}
+
+.hero-banner { width: 100%; max-height: 60vh; overflow: hidden; }
+.hero-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.home-intro-eyebrow {
+  font-family: var(--mono); font-size: 0.75rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-600);
+}
+.home-intro-title {
+  font-family: var(--serif); font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1; margin: 0.5rem 0;
+}
+.home-intro-sub {
+  font-family: var(--mono); font-size: 1rem; color: var(--grey-600);
+  max-width: 600px;
+}
+
+.section-header { display: flex; align-items: baseline; gap: 1rem; margin: 4rem 0 2rem; }
+.section-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); }
+
+.post-excerpt { font-family: var(--mono); font-size: 0.85rem; color: var(--grey-600); margin: 0.5rem 0; }
+.post-reading-time { font-family: var(--mono); font-size: 0.7rem; color: var(--grey-400); }
+
+.site-footer { border-top: 1px solid var(--grey-200); padding: 2rem 0; }
+.footer-links a { font-family: var(--mono); font-size: 0.7rem; text-decoration: none; }
+.hero-banner { width: 100%; height: 45vh; max-height: 500px; overflow: hidden; }
