@@ -123,7 +123,7 @@ nav,
 
 .hero {
   width: 100%;
-  min-height: 85vh;
+  min-height: auto;
   background: var(--white);
   display: flex;
   align-items: center;
@@ -136,44 +136,23 @@ nav,
   margin: 0 auto;
   padding: 3rem 3rem;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 2rem;
 }
 
-.hero-text-block {
-  flex: 1 1 420px;
-  min-width: 0;
-}
-
-.hero-title {
-  font-family: var(--serif);
-  font-size: clamp(3rem, 7vw, 5.5rem);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-family: var(--serif);
-  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  line-height: 1.2;
-}
-
-.hero-tagline {
-  font-family: var(--serif);
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  color: var(--grey-600);
-  margin-top: 0.25rem;
-}
-
 .hero-portrait {
-  flex: 0 1 480px;
-  max-width: 42%;
+  flex: 1 1 480px;
+  max-width: 50%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
 .hero-portrait img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
 }
 
