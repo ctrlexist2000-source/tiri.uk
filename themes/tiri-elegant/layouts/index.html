@@ -15,21 +15,18 @@
   <div class="container">
     <h2 class="section-heading">Recent Thoughts</h2>
     {{ $posts := first 6 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
-    <div class="post-grid">
-      {{ range $posts }}
-      <article class="post-card">
-        <a href="{{ .RelPermalink }}">
-          <h3 class="post-title">{{ .Title }}</h3>
-        </a>
-        {{ if .Date }}
-        <time class="post-date">{{ .Date.Format "02 Jan 2006" }}</time>
-        {{ end }}
-        {{ if .Summary }}
-        <p class="post-summary">{{ .Summary }}</p>
-        {{ end }}
-      </article>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
+<div class="post-grid">
+  {{ range $posts }}
+  <article class="post-card">
+    <a href="{{ .RelPermalink }}">
+      <h3 class="post-title">{{ .Title }}</h3>
+    </a>
+    {{ if .Date }}
+    <time class="post-date">{{ .Date.Format "02 Jan 2006" }}</time>
+    {{ end }}
+    {{ if .Summary }}
+    <p class="post-summary">{{ .Summary | plainify | truncate 120 }}</p>
+    {{ end }}
+  </article>
+  {{ end }}
+
