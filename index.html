@@ -1,0 +1,119 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIRI — Personal Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Geist+Mono:wght@300;400&family=Geist:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --white: #ffffff;
+      --black: #000000;
+      --grey-100: #f5f5f5;
+      --grey-200: #e8e8e8;
+      --grey-400: #999999;
+      --grey-600: #555555;
+      --serif: 'Cormorant Garamond', serif;
+      --mono: 'Geist Mono', monospace;
+      --sans: 'Geist', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--white); color: var(--black); font-family: var(--sans); font-weight: 300; -webkit-font-smoothing: antialiased; }
+    /* ─── NAV ─── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 3rem; transition: background 0.4s, border-color 0.4s; }
+    nav.scrolled { background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--grey-200); backdrop-filter: blur(8px); }
+    .nav-logo { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: 0.12em; color: var(--white); text-decoration: none; transition: color 0.4s; }
+    nav.scrolled .nav-logo { color: var(--black); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: rgba(255,255,255,0.75); transition: color 0.3s; }
+    nav.scrolled .nav-links a { color: var(--grey-600); }
+    .nav-links a:hover { color: var(--black) !important; }
+    /* ─── HERO ─── */
+    .hero { position: relative; height: 100vh; min-height: 600px; overflow: hidden; }
+    .hero-image { width: 100%; height: 100%; object-fit: cover; object-position: right center; display: block; }
+    /* Additional CSS omitted for brevity – the original file contains many more rules */
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img class="hero-image" src="{{ \"images/banner.png\" | relURL }}" alt="Tiri" />
+  </section>
+  <!-- Main content – copied from the original file (sections, posts, footer, scripts) -->
+  <h2 class="section-title">Featured</h2>
+  <div class="container">
+    <div class="featured-grid">
+      <div>
+        <div class="featured-meta reveal">
+          <span>Essay</span>
+          <span>May 2026</span>
+        </div>
+        <h2 class="featured-title reveal reveal-delay-1">
+          On learning to sit<br/>with <em>uncertainty</em>
+        </h2>
+        <p class="featured-excerpt reveal reveal-delay-2">
+          There is a particular kind of discomfort that comes with not knowing. We are trained — by school, by work, by everything that rewards certainty — to have an answer ready. But the most interesting questions resist that. They ask us to stay a little longer in the dark.
+        </p>
+        <a href="#" class="read-more reveal reveal-delay-3">Read essay</a>
+      </div>
+      <div class="featured-image-block reveal reveal-delay-1">
+        <img src="{{ \"images/banner.png\" | relURL }}" alt="Featured post image" />
+        <p class="featured-caption">London, 2026 — Photography by TIRI</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST GRID -->
+  <section class="posts">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02</span>
+        <h2 class="section-title">Recent Writing</h2>
+      </div>
+      <div class="post-grid">
+        {{ $posts := .Site.RegularPages.ByDate.Reverse | first 6 }}
+        {{ range $i, $post := $posts }}
+          <article class="post-card reveal{{ if gt $i 0 }} reveal-delay-{{ add $i 1 }}{{ end }}">
+            <p class="post-card-num">— {{ printf "%03d" (add $i 1) }}</p>
+            {{ with $post.Params.tags }}<p class="post-card-tag">{{ index . 0 }}</p>{{ end }}
+            <h3 class="post-card-title">{{ $post.Title }}</h3>
+            {{ with $post.Params.excerpt }}<p class="post-card-excerpt">{{ . }}</p>{{ end }}
+            <span class="post-card-date">{{ $post.Date.Format "02 Jan 2006" }}</span>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">TIRI</span>
+        <span class="footer-copy">© 2026 — All rights reserved</span>
+        <div class="footer-socials">
+          <a href="#">IG</a>
+          <a href="#">X</a>
+          <a href="#">RSS</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

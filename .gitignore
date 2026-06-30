@@ -5,6 +5,8 @@ resources/
 categories/
 page/
 tags/
-index.html
-index.xml
-sitemap.xml
+/docs/index.html
+/docs/index.xml
+/docs/sitemap.xml
+style.css.bak
+docs/404.html.old
