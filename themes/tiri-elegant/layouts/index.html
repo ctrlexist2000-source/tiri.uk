@@ -1,6 +1,16 @@
 {{ define "main" }}
 
 <section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text-block">
+      <h1 class="hero-title">TIRI.UK</h1>
+      <p class="hero-subtitle">Poetic, but employable.</p>
+      <p class="hero-tagline">Exist since 1991</p>
+    </div>
+    <div class="hero-portrait">
+      <img src="{{ "images/portrait.png" | relURL }}" alt="Tiri portrait" />
+    </div>
+  </div>
 </section>
 
 <section class="recent-section">
@@ -8,23 +18,25 @@
 
     <h2 class="section-heading">Recent Thoughts</h2>
 
+    {{ $posts := first 10 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+
     <div class="post-grid">
 
-      {{ $posts := (where site.RegularPages "Section" "posts").ByDate.Reverse }}
-      {{ range first 10 $posts }}
+      {{ range $posts }}
+      <article class="post-card">
+        <a href="{{ .RelPermalink }}">
+          <h3>{{ .Title }}</h3>
+        </a>
 
-        <article class="post-card">
+        {{ if .Date }}
+        <time>{{ .Date.Format "02 Jan 2006" }}</time>
+        {{ end }}
 
-          <h3>
-            <a href="{{ .RelPermalink }}">
-              {{ .Title }}
-            </a>
-          </h3>
+        {{ if .Summary }}
+        <p>{{ .Summary }}</p>
+        {{ end }}
 
-          <p>{{ .Summary }}</p>
-
-        </article>
-
+      </article>
       {{ end }}
 
     </div>
