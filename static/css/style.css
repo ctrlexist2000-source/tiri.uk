@@ -152,7 +152,7 @@ nav,
 
 .hero {
   width: 100%;
-  background: var(--white);
+  background: transparent;
   display: flex;
   align-items: center;
   overflow: hidden;
