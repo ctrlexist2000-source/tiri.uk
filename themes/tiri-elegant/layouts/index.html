@@ -14,7 +14,7 @@
 <section class="recent-section">
   <div class="container">
     <h2 class="section-heading">Recent Thoughts</h2>
-    {{ $posts := first 10 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+    {{ $posts := first 6 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
     <div class="post-grid">
       {{ range $posts }}
       <article class="post-card">
