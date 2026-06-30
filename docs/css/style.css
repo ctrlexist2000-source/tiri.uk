@@ -146,7 +146,7 @@ nav,
 }
 
 .hero-text-block {
-  flex: 1 1 420px;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -171,8 +171,7 @@ nav,
 }
 
 .hero-portrait {
-  flex: 1 1 540px;
-  max-width: 50%;
+  flex: 0 0 500px;
   height: 520px;
   overflow: hidden;
 }
@@ -184,6 +183,7 @@ nav,
   object-position: top center;
   display: block;
   transform: scale(1.25);
+  transform-origin: top center;
 }
 
 .hero-banner {
