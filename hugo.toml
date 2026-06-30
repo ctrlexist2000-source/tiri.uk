@@ -1,0 +1,31 @@
+baseURL = "https://tiri.uk/"
+disqusShortname = "tiri-uk"
+title = "Tiri.Uk"
+theme = "tiri-elegant"
+publishDir = "docs"
+
+defaultContentLanguage = "pl"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  mainSections = ["posts"]
+
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "tiri.uk"
+[[menu.main]]
+  name = "Archiwum"
+  url = "/archiwum/"
+  weight = 25
+
+[[menu.main]]
+  name = "About"
+  url = "/about-me"
+  weight = 30
+
+[[menu.main]]
+  name = "Contact"
+  url = "/connect"
+  weight = 40
